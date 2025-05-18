@@ -1,0 +1,51 @@
+.mainContainer{
+    min-height: 90vh;
+    width: 90%;
+    background-color: #dddedd;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+     flex: 0.3
+}
+.side-head{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px 10px;
+}
+.search{
+    background-color: #fff;
+    border-radius: 20px;
+    /* padding: 2px 2px; */
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+.input{
+    outline-width: 0;
+    border: none;
+    font-size: larger;
+    margin: 5px;
+}
+.chat-list{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.chat-dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.7;
+}
