@@ -8,7 +8,7 @@ const MainContainer = () => {
       <div className="sidebar">
         <Sidebar />
       </div>
-      <div className="chatDash">
+      <div className="chat-dash">
         <ChatDash />
       </div>
     </div>

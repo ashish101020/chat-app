@@ -40,12 +40,112 @@
     margin: 5px 10px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    overflow-y: auto;
+    /* flex-grow: 1; */
+    /* overflow-y: auto; */
+    height: 80vh;
 }
-.chat-dash{
+.chat-item{
+    display: grid;
+    grid-template-columns: 32px auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.chat-icon{
+    grid-area: 1/1/3/2;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #d9d9d9;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+.chat-title{
+    grid-area: 1/2/2/4;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+.chat.lastMessage{
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.chat-dash{
     flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chat-dash-header{
+    background-color: gold;
+    height: 6vh;
+    border-radius: 10px;
+    padding: 10px;display: grid;
+    grid-template-columns: 32px auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    /* margin: 10px; */
+}
+.user-logo{
+    grid-area: 1/1/3/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+.user-name{
+    grid-area: 1/2/2/4;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+.chat-dash-content{
+    background-color: firebrick;
+    height: 72vh;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    /* flex: 1; */
+}
+.chat-dash-input{
+    background-color: honeydew;
+    height: 6vh;
+    padding: 10px;
+    border-radius: 10px;
+}
+.user-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight:300;
+}
+.chat-dash-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box{
+    outline-width: 0;
+    border: none;
+    font-size: larger;
+    margin: 5px;
 }
